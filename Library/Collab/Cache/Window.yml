@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - Assets/ArrowBehaviour.cs
+    - Assets/ArrowBehaviour.cs.meta
+    - Assets/ArrowMovement.cs
+    - Assets/ArrowMovement.cs.meta
+    - Assets/Images.meta
+    - Assets/Images/ArrowLeft 2.png
+    - Assets/Images/ArrowLeft 2.png.meta
+    - Assets/Images/ArrowLeft.png
+    - Assets/Images/ArrowLeft.png.meta
+    - Assets/Images/ArrowRight 2.png
+    - Assets/Images/ArrowRight 2.png.meta
+    - Assets/Images/ArrowRight.png
+    - Assets/Images/ArrowRight.png.meta
+    - Assets/Images/ArrowUp 1.png
+    - Assets/Images/ArrowUp 1.png.meta
+    - Assets/Images/ArrowUp.png
+    - Assets/Images/ArrowUp.png.meta
+    - Assets/Images/keys 1.png
+    - Assets/Images/keys 1.png.meta
+    - Assets/Main.unity
+    - Assets/Prefabs/ArrowLeft1.prefab
+    - Assets/Prefabs/ArrowLeft1.prefab.meta
+    - Assets/Prefabs/ArrowLeft2.prefab
+    - Assets/Prefabs/ArrowLeft2.prefab.meta
+    - Assets/Prefabs/ArrowLeft3.prefab
+    - Assets/Prefabs/ArrowLeft3.prefab.meta
+    - Assets/Prefabs/ArrowRight1.prefab
+    - Assets/Prefabs/ArrowRight1.prefab.meta
+    - Assets/Prefabs/ArrowRight2.prefab
+    - Assets/Prefabs/ArrowRight2.prefab.meta
+    - Assets/Prefabs/ArrowRight3.prefab
+    - Assets/Prefabs/ArrowRight3.prefab.meta
+    - Assets/Prefabs/ArrowUp1.prefab
+    - Assets/Prefabs/ArrowUp1.prefab.meta
+    - Assets/Prefabs/ArrowUp2.prefab
+    - Assets/Prefabs/ArrowUp2.prefab.meta
+    - Assets/Prefabs/ArrowUp3.prefab
+    - Assets/Prefabs/ArrowUp3.prefab.meta
+    - Assets/Prefabs/Camera.prefab
+    - Assets/Prefabs/Camera.prefab.meta
+    - Assets/Prefabs/PR_Viewer.prefab
+    - Assets/Scripts/MeasureDepth.cs
+    - 
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
