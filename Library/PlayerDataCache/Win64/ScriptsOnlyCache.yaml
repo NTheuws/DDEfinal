@@ -20,8 +20,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -41,6 +39,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Main.unity:
     - Class: 1
@@ -78,19 +77,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 3268}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 3270}
     - Class: 114
-      Script: {instanceID: 4326}
+      Script: {instanceID: 4292}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 4328}
     - Class: 114
-      Script: {instanceID: 5324}
+      Script: {instanceID: 5294}
     - Class: 114
-      Script: {instanceID: 5690}
+      Script: {instanceID: 5326}
     - Class: 114
-      Script: {instanceID: 23592}
+      Script: {instanceID: 5692}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -133,12 +132,16 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2130}
     - Class: 114
+      Script: {instanceID: 2246}
+    - Class: 114
       Script: {instanceID: 2832}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3320}
     - Class: 114
-      Script: {instanceID: 3442}
+      Script: {instanceID: 3444}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -277,7 +280,7 @@ ScriptsOnlyBuild:
     className: BodySourceView
   - hash:
       serializedVersion: 2
-      Hash: b44b225b89392a0b8b91d803176dd9c7
+      Hash: ed2607594f57849a395fe3235810fc0a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StartGame
@@ -329,6 +332,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Audio
   - hash:
       serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
@@ -791,14 +800,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Audio
   platform: 19
   scenePathNames:
   - Assets/Menu.unity
   - Assets/Main.unity
-  playerPath: C:/Users/Niels/Desktop/New folder/Kinect Depth game.exe
+  playerPath: C:/Users/Niels/Desktop/dde/Kinect Depth game.exe

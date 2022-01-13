@@ -10,7 +10,7 @@ public class ArrowBehaviour : MonoBehaviour
     private float nextActionTime = 0.0f;
     private float period = 6f;
 
-    private int table = 2;
+    public static int table = 2;
     public static int num = 1;
 
     public static int leftnum;
@@ -25,16 +25,13 @@ public class ArrowBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            CreateNewRow();
-        }
-        if (Time.time > nextActionTime)
+        if (Time.timeSinceLevelLoad > nextActionTime)
         {
             nextActionTime += period;
             ShowCurrentTable();
             CreateNewRow();
         }
+        
     }
 
     // Generate a new row of arrows and numbers.
@@ -61,11 +58,11 @@ public class ArrowBehaviour : MonoBehaviour
             {
                 if (ran == 1)
                 {
-                    arrowMove.Answer = 2 * num;
+                    arrowMove.Answer = table * num;
                 }
                 else
                 {
-                    arrowMove.Answer = 2 * num + 4;
+                    arrowMove.Answer = table * num + 4;
                 }
                 rightnum = arrowMove.Answer;
             }
@@ -74,11 +71,11 @@ public class ArrowBehaviour : MonoBehaviour
             {
                 if (ran == 2)
                 {
-                    arrowMove.Answer = 2 * num;
+                    arrowMove.Answer = table * num;
                 }
                 else
                 {
-                    arrowMove.Answer = 2 * num - 1;
+                    arrowMove.Answer = table * num - 1;
                 }
                 leftnum = arrowMove.Answer;
             }
@@ -87,16 +84,16 @@ public class ArrowBehaviour : MonoBehaviour
             {
                 if (ran == 3)
                 {
-                    arrowMove.Answer = 2 * num;
+                    arrowMove.Answer = table * num;
                 }
                 else
                 {
-                    arrowMove.Answer = 2 * num + 2;
+                    arrowMove.Answer = table * num + 2;
                 }
                 upnum = arrowMove.Answer;
             }
         }
-        correctAnswer = num * 2;
+        correctAnswer = num * table;
         num++;
     }
 

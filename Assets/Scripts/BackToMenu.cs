@@ -12,7 +12,8 @@ public class BackToMenu : MonoBehaviour
     {
         if (Input.GetKey("escape"))
         {
-            Application.Quit();
+            SceneManager.LoadScene(0);
+            SceneManager.UnloadScene(1);
         }
     }
 }
