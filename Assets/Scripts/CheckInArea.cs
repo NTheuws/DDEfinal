@@ -7,6 +7,10 @@ public class CheckInArea : MonoBehaviour
     public static bool InArea = false;
     public static bool IsTriggered = true;
 
+    // Scoring area.
+    private int minimalValY = 175; 
+    private int maximalValY = 205;
+
     private void Start()
     {
         IsTriggered = false;
@@ -17,7 +21,7 @@ public class CheckInArea : MonoBehaviour
     }
     private void CheckIfInArea()
     {
-        if (this.transform.position.y > 175 && this.transform.position.y < 205)
+        if (this.transform.position.y > minimalValY && this.transform.position.y < maximalValY)
         {
             InArea = true;
             IsTriggered = true;

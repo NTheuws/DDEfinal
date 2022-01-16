@@ -6,6 +6,7 @@ public class ArrowMovement : MonoBehaviour
 {
     public TextMesh AnswerText;
     public int Answer;
+    private float arrowSpeed = 0.12f;
 
     void Start()
     {
@@ -15,7 +16,7 @@ public class ArrowMovement : MonoBehaviour
     {
         // Move the arrow.
         Vector3 curPos = this.transform.position;
-        this.transform.position = new Vector3(curPos.x, curPos.y + 0.12f, curPos.z);
+        this.transform.position = new Vector3(curPos.x, curPos.y + arrowSpeed, curPos.z);
     }
     private void OnBecameInvisible()
     {

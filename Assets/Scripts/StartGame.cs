@@ -43,17 +43,17 @@ public class StartGame : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    private void tableValUp()
+    private void tableValUp() // Value of the current selected multiplication table up.
     {
-        if (ArrowBehaviour.table < 10)
+        if (ArrowBehaviour.table < 10) // Value can't go above 10.
         {
             ArrowBehaviour.table++;
             tableNum.text = ArrowBehaviour.table.ToString();
         }
     }
-    private void tableValDown()
+    private void tableValDown() // Value of the current selected multiplication table down.
     {
-        if (ArrowBehaviour.table > 1)
+        if (ArrowBehaviour.table > 1) // Value can't go below 1.
         {
             ArrowBehaviour.table--;
             tableNum.text = ArrowBehaviour.table.ToString();

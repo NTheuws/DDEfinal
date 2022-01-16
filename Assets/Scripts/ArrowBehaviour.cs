@@ -47,48 +47,53 @@ public class ArrowBehaviour : MonoBehaviour
     // Assign Numbers to each arrow.
     private void GiveNumbers()
     {
-        int ran = Random.Range(1, 4);
+        int ran = Random.Range(1, 4); // Randomize which arrow has the correct value. 
+        int arrowsPerDirection = arrows.Count / 3; // Total set of arrows each direction has.
 
         for (int i = 0; i < arrows.Count; i++)
         {
             ArrowMovement arrowMove = arrows[i].GetComponent<ArrowMovement>();
-            // right arrows.
             
-            if (i < 2)
+            // right arrows.
+            if (i < arrowsPerDirection) // First set of all arrows in the list
             {
-                if (ran == 1)
+                if (ran == 1) // Correct answer on right.
                 {
                     arrowMove.Answer = table * num;
                 }
                 else
                 {
-                    arrowMove.Answer = table * num + 4;
+                    arrowMove.Answer = table * (num + 1); // One multiplication higher than the correct answer.
                 }
                 rightnum = arrowMove.Answer;
             }
             // left arrows.
-            else if (i >= 2 && i < 4)
+            else if (i >= arrowsPerDirection && i < arrowsPerDirection*2) // Middle set of arrows.
             {
-                if (ran == 2)
+                if (ran == 2) // Correct answer on left.
                 {
                     arrowMove.Answer = table * num;
                 }
+                else if (ran == 1)
+                {
+                    arrowMove.Answer = table * (num + 1); // One multiplication higher than the correct answer.
+                }
                 else
                 {
-                    arrowMove.Answer = table * num - 1;
+                    arrowMove.Answer = table * (num - 1); // One multiplication lower than the correct answer.
                 }
                 leftnum = arrowMove.Answer;
             }
             // Up arrows.
-            else if (i >= 4 && i < 6)
+            else if (i >= arrowsPerDirection*2) // Last set of arrows.
             {
-                if (ran == 3)
+                if (ran == 3) // Correct answer on up.
                 {
                     arrowMove.Answer = table * num;
                 }
                 else
                 {
-                    arrowMove.Answer = table * num + 2;
+                    arrowMove.Answer = table * (num - 1); // One multiplication lower than the correct answer.
                 }
                 upnum = arrowMove.Answer;
             }

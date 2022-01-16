@@ -12,8 +12,8 @@ public class BackToMenu : MonoBehaviour
     {
         if (Input.GetKey("escape"))
         {
-            SceneManager.LoadScene(0);
-            SceneManager.UnloadScene(1);
+            SceneManager.LoadScene(0); // Unload game to reset timer.
+            SceneManager.UnloadScene(1); // Load menu.
         }
     }
 }
